@@ -3,7 +3,7 @@ import { Box } from '@mui/material'
 import React from 'react'
 
 import SignUpForms from '@/components/Forms/SignUpForms'
-import { BackgroundStyle } from './styleSignUp'
+import { BackgroundStyle } from '../../styles/Pages/singUp/styleSignUp'
 
 export default function signUp () {
   return (

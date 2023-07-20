@@ -1,5 +1,5 @@
 import React from 'react'
-import { BackgroundStyle, BoxLoginStyle, BoxLoginStyle2, ButonStyle, TextStyle, InputStyle, FormControlStyle, InputAdornmentStyle } from '@/styles/Forms/LoginFormsStyle'
+import { BackgroundStyle, BoxLoginStyle, BoxLoginStyle2, ButonStyle, TextStyle, InputStyle, FormControlStyle, InputAdornmentStyle } from '@/styles/Components/Forms/LoginFormsStyle'
 import { Box, Button, FormControl, IconButton, InputAdornment, InputLabel, Link, Paper, Typography } from '@mui/material'
 import CustomInput from '../Inputs'
 import { Visibility, VisibilityOff } from '@mui/icons-material'

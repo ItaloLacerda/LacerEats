@@ -1,6 +1,6 @@
 import '../../styles/globals.css'
 import { Box } from '@mui/material'
-import { BackgroundStyle } from './styleLogin'
+import { BackgroundStyle } from '../../styles/Pages/login/styleLogin'
 import React from 'react'
 import LoginForms from '@/components/Forms/LoginForms'
 
