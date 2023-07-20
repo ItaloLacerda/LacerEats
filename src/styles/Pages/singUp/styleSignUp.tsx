@@ -1,5 +1,5 @@
 import type React from 'react'
-import BackgroundLoginPage from '../../public/images/backgroundLoginPage.png'
+import BackgroundLoginPage from '../../../public/images/backgroundLoginPage.png'
 
 export const BackgroundStyle: React.CSSProperties = {
   height: '100vh',
