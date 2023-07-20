@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LacerEats - Plataforma de Gestão e Delivery para Lanchonetes e Restaurantes
 
-## Getting Started
+LacerEats é um aplicativo inovador desenvolvido para atender às necessidades de gestão de pequenas lanchonetes e restaurantes, bem como proporcionar uma experiência conveniente aos clientes que desejam pedir suas refeições favoritas para entrega ou retirada no estabelecimento.
 
-First, run the development server:
+## Recursos e Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+O projeto LacerEats abrange duas frentes:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Gestão para Empreendedores
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Gestão de Pedidos:** Facilita o gerenciamento de pedidos, permitindo aos empreendedores receber, rastrear e gerenciar pedidos de forma eficiente.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Controle de Estoque de Materiais:** Acompanhe o estoque de ingredientes e materiais essenciais, recebendo alertas quando for necessário reabastecer.
 
-## Learn More
+- **Fluxo de Caixa:** Fornece ferramentas para controle financeiro, permitindo que os proprietários acompanhem receitas, despesas e lucros.
 
-To learn more about Next.js, take a look at the following resources:
+- **Controle de Delivery:** Gerencia as entregas de forma eficiente, atribuindo entregadores, acompanhando rotas e garantindo entregas rápidas e precisas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Facilidades para Clientes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Busca Simplificada:** Os clientes podem encontrar seus restaurantes e lanchonetes preferidos de forma rápida e intuitiva, usando filtros e categorias.
 
-## Deploy on Vercel
+- **Pedidos e Pagamentos Online:** Os clientes podem fazer pedidos e efetuar pagamentos de forma segura e prática, sem a necessidade de contato físico.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Entrega ou Retirada no Local:** Os clientes têm a opção de receber suas refeições no conforto de casa ou optar por retirá-las no próprio estabelecimento.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Objetivo
+
+O objetivo do projeto é fornecer uma solução completa e fácil de usar para a gestão de pequenos estabelecimentos de alimentação, bem como oferecer uma plataforma amigável para que os clientes possam descobrir e solicitar refeições de seus locais preferidos com total comodidade.
+
+Acreditamos que a combinação de funcionalidades abrangentes para empreendedores e uma experiência de usuário atraente para os clientes irá impulsionar a eficiência operacional dos restaurantes e lanchonetes, ao mesmo tempo em que aumenta a satisfação do cliente e a fidelização.
+
+Seja bem-vindo ao mundo da gestão moderna de lanchonetes e delivery de qualidade com LacerEats!
+
+[Inserir aqui informações de contato ou links para o projeto e site, se aplicável]
+
+
