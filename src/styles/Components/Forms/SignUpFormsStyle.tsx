@@ -20,7 +20,7 @@ export const BoxStyle: React.CSSProperties = {
   alignItems: 'center',
 
   width: '23.78em',
-  height: '24.76em'
+  height: '31.76em'
 }
 
 export const BoxStyle2: React.CSSProperties = {
