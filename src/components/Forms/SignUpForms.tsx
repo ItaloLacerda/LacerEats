@@ -4,8 +4,24 @@ import { Box, Button, FormControl, IconButton, InputAdornment, InputLabel, Link,
 import CustomInput from '../Inputs'
 import { Visibility, VisibilityOff } from '@mui/icons-material'
 
-export default function LoginForms () {
+export default function SingUpForms () {
   const [showPassword, setShowPassword] = React.useState(false)
+  const [newUser, setNewUser] = React.useState({
+    firstName: '',
+    lastName: '',
+    loginUser: '',
+    password: '',
+    confirmPassword: ''
+  })
+
+  const handleChangeNewUser = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target
+
+    setNewUser((user) => ({
+      ...user,
+      [name]: value
+    }))
+  }
 
   const handleClickShowPassword = () => { setShowPassword((show) => !show) }
 
@@ -21,10 +37,22 @@ export default function LoginForms () {
     </Box>
     <Box sx={BoxStyle}>
       <FormControl variant="standard" sx={ FormControlStyle }>
-        <InputLabel shrink htmlFor="email-input">
-          Email
+        <InputLabel shrink htmlFor="first-name-input">
+          First Name
         </InputLabel>
-        <CustomInput id="email-input" sx={ InputStyle }/>
+        <CustomInput id="first-name-input" value={newUser.firstName} name='firstName' onChange={handleChangeNewUser} sx={ InputStyle }/>
+      </FormControl>
+      <FormControl variant="standard" sx={ FormControlStyle }>
+        <InputLabel shrink htmlFor="last-name-input">
+          Last Name
+        </InputLabel>
+        <CustomInput id="last-name-input" value={newUser.lastName} name='lastName' onChange={handleChangeNewUser} sx={ InputStyle }/>
+      </FormControl>
+      <FormControl variant="standard" sx={ FormControlStyle }>
+        <InputLabel shrink htmlFor="login-user-input">
+          Login User
+        </InputLabel>
+        <CustomInput id="login-user-input" value={newUser.loginUser} name='loginUser' onChange={handleChangeNewUser} sx={ InputStyle }/>
       </FormControl>
       <FormControl variant="standard" sx={ FormControlStyle }>
         <InputLabel shrink htmlFor="password-input">
@@ -32,6 +60,9 @@ export default function LoginForms () {
         </InputLabel>
         <CustomInput
           id="password-input"
+          value={newUser.password}
+          name='password'
+          onChange={handleChangeNewUser}
           sx={ InputStyle }
           type={showPassword ? 'text' : 'password'}
           endAdornment={
@@ -53,6 +84,9 @@ export default function LoginForms () {
         </InputLabel>
         <CustomInput
           id="Confirm-Password-input"
+          value={newUser.confirmPassword}
+          name='confirmPassword'
+          onChange={handleChangeNewUser}
           sx={ InputStyle }
           type={showPassword ? 'text' : 'password'}
           endAdornment={
