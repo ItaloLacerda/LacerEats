@@ -1,11 +1,10 @@
-export const buttonStyle = {
-  width: ' 30vw',
-  height: '30vh',
-  margin: '0 1em 2em 0',
-  backgroundColor: '#fff',
-  flexDirection: 'column'
-}
+import { styled } from '@mui/material/styles'
 
-export const iconStyle = {
-  fontSize: '10em'
-}
+export const DrawerFoother = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  padding: theme.spacing(11.2, 1),
+  // necessary for content to be below app bar
+  ...theme.mixins.toolbar
+}))
