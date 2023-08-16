@@ -32,4 +32,4 @@ Acreditamos que a combinação de funcionalidades abrangentes para empreendedore
 
 Seja bem-vindo ao mundo da gestão moderna de lanchonetes e delivery de qualidade com LacerEats!
 
-[Inserir aqui informações de contato ou links para o projeto e site] 📞💻
+[https://lacer-eats.vercel.app](https://lacer-eats.vercel.app/login) 📞💻
