@@ -7,7 +7,6 @@ import { type OverridableComponent } from '@mui/material/OverridableComponent'
 
 import { listIcons } from '../constants'
 import { buttonStyle, iconStyle } from '@/styles/pages/(internal-system)/global.style'
-import { DrawerFoother } from '@/styles/pages/(internal-system)/home/home.style'
 
 export default function Home () {
   const router = useRouter()
@@ -36,7 +35,6 @@ export default function Home () {
         }
       })
     }
-    <DrawerFoother />
     </>
 
   )
