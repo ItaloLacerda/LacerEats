@@ -3,6 +3,6 @@ import PersonSearchIcon from '@mui/icons-material/PersonSearch'
 import { type listIconsType } from '@/types/pages/home/components/drawerComponent/drawerComponent.type'
 
 export const listIcons: listIconsType = [
-  ['Seek Collaborator', PersonSearchIcon, '/reports/collaborators'],
+  ['Seek Collaborator', PersonSearchIcon, '/records/collaborators'],
   ['Register Collaborator', PersonAddIcon, '/records/collaborators/register']
 ]
