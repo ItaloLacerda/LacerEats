@@ -14,5 +14,6 @@ export const boxStyle = { display: 'flex' }
 export const boxStyle2 = {
   flexGrow: 1,
   p: 3,
-  backgroundColor: '#fff'
+  backgroundColor: '#fff',
+  height: '100vh'
 }
