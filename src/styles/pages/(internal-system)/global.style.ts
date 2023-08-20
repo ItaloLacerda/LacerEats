@@ -9,3 +9,5 @@ export const buttonStyle = {
 export const iconStyle = {
   fontSize: '10em'
 }
+
+export const boxStyle = { marginTop: '1.50vh' }
