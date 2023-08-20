@@ -2,10 +2,9 @@ import './globals.css'
 import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { ThemeProvider } from '@mui/material/styles'
 
 import { ReduxProvider } from '@/components/redux/provider'
-import { globalTheme } from '@/styles/themes/global.theme'
+import { MUIProvider } from '@/components/MUI/MUIProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,11 +24,11 @@ export default function RootLayout ({
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
       <body className={inter.className}>
-        <ThemeProvider theme={globalTheme}>
-          <ReduxProvider>
-            {children}
-          </ReduxProvider>
-        </ThemeProvider>
+          <MUIProvider>
+            <ReduxProvider>
+              {children}
+            </ReduxProvider>
+          </MUIProvider>
       </body>
     </html>
   )
