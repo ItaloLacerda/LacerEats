@@ -3,6 +3,7 @@
 import { boxStyle, inputStyle, roleStyle, buttonStyle } from '@/styles/pages/(internal-system)/records/products/register-product-group/components/productGroupForm.style'
 import { Box, FormControl, InputLabel, MenuItem, Select, type SelectChangeEvent, TextField, Button } from '@mui/material'
 import * as React from 'react'
+import { type Tselect, type IproductGroupForm } from './productGroupForm.type'
 
 export default function ProductGroupForm () {
   const [newProductGroup, setNewProductGroup] = React.useState({
@@ -11,12 +12,16 @@ export default function ProductGroupForm () {
     showInTerminal: '',
     showInMobile: ''
   })
-  const [openAndClose, setOpenAndClose] = React.useState({ selectOne: false, selectTwo: false, selectThree: false })
+  const [openAndClose, setOpenAndClose] = React.useState<IproductGroupForm>({
+    selectOne: 'inactive',
+    selectTwo: 'inactive',
+    selectThree: 'inactive'
+  })
 
-  const handleOpenAndClose = (select: 'selectOne' | 'selectTwo' | 'selectThree') => {
+  const handleOpenAndClose = (select: Tselect) => {
     setOpenAndClose((boolean) => ({
       ...boolean,
-      [select]: !boolean[select]
+      [select]: boolean[select] === 'inactive' ? 'active' : 'inactive'
     }))
   }
 
@@ -53,7 +58,7 @@ export default function ProductGroupForm () {
                 labelId="show-in-mobile-input"
                 id="show-in-mobile-input"
                 name="selectOne"
-                open={openAndClose.selectOne}
+                open={openAndClose.selectOne !== 'inactive'}
                 onClose={() => { handleOpenAndClose('selectOne') }}
                 onOpen={() => { handleOpenAndClose('selectOne') }}
                 value={newProductGroup.showInMobile}
@@ -73,7 +78,7 @@ export default function ProductGroupForm () {
                 labelId="show-in-terminal-input"
                 id="show-in-terminal-input"
                 name="selectTwo"
-                open={openAndClose.selectTwo}
+                open={openAndClose.selectTwo !== 'inactive'}
                 onClose={() => { handleOpenAndClose('selectTwo') }}
                 onOpen={() => { handleOpenAndClose('selectTwo') }}
                 value={newProductGroup.showInTerminal}
@@ -94,7 +99,7 @@ export default function ProductGroupForm () {
               <Select
                 labelId="status-input"
                 id="status-input"
-                open={openAndClose.selectThree}
+                open={openAndClose.selectThree !== 'inactive'}
                 onClose={() => { handleOpenAndClose('selectThree') }}
                 onOpen={() => { handleOpenAndClose('selectThree') }}
                 value={newProductGroup.status}
