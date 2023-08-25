@@ -4,10 +4,6 @@ export const boxStyle = {
 }
 
 export const inputStyle = {
-  minWidth: '31vw'
-}
-
-export const inputStyle2 = {
   minWidth: '21vw'
 }
 
