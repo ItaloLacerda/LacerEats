@@ -3,7 +3,7 @@
 import { boxStyle, inputStyle, roleStyle, buttonStyle } from '@/styles/pages/(internal-system)/records/products/register-product-group/components/productGroupForm.style'
 import { Box, FormControl, InputLabel, MenuItem, Select, type SelectChangeEvent, TextField, Button } from '@mui/material'
 import * as React from 'react'
-import { type Tselect } from './productGroupForm.type'
+import { type Tselect } from '@/types/pages/(internal-system)/records/products/register-product-group/components/ProductGroupForm/productGroupForm.type'
 
 export default function ProductGroupForm () {
   const [newProductGroup, setNewProductGroup] = React.useState({
