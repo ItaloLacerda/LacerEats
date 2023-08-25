@@ -57,7 +57,7 @@ export default function ProductGroupForm () {
               <Select
                 labelId="show-in-mobile-input"
                 id="show-in-mobile-input"
-                name="selectOne"
+                name="showInMobile"
                 open={openAndClose.selectOne}
                 onClose={() => { handleOpenAndClose('selectOne') }}
                 onOpen={() => { handleOpenAndClose('selectOne') }}
@@ -77,7 +77,7 @@ export default function ProductGroupForm () {
               <Select
                 labelId="show-in-terminal-input"
                 id="show-in-terminal-input"
-                name="selectTwo"
+                name="showInTerminal"
                 open={openAndClose.selectTwo}
                 onClose={() => { handleOpenAndClose('selectTwo') }}
                 onOpen={() => { handleOpenAndClose('selectTwo') }}
@@ -99,6 +99,7 @@ export default function ProductGroupForm () {
               <Select
                 labelId="status-input"
                 id="status-input"
+                name="status"
                 open={openAndClose.selectThree}
                 onClose={() => { handleOpenAndClose('selectThree') }}
                 onOpen={() => { handleOpenAndClose('selectThree') }}
